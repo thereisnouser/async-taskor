@@ -1,3 +1,7 @@
+### Development folders ###
+docs/
+tmp/
+
 ### Build files ###
 build/
 !**/src/main/**/build/
