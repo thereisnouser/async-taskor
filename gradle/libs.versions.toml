@@ -1,0 +1,26 @@
+[versions]
+kotlin = "1.9.25"
+spring-boot = "3.5.4"
+spring-deps = "1.1.7"
+
+thumbnailator = "0.4.20"
+awssdk = "2.32.25"
+uuid-creator = "6.1.1"
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin" }
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
+spring-deps = { id = "io.spring.dependency-management", version.ref = "spring-deps" }
+
+[libraries]
+thumbnailator = { module = "net.coobird:thumbnailator", version.ref = "thumbnailator" }
+awssdk-s3 = { module = "software.amazon.awssdk:s3", version.ref = "awssdk" }
+awssdk-auth = { module = "software.amazon.awssdk:auth", version.ref = "awssdk" }
+uuid-creator = { module = "com.github.f4b6a3:uuid-creator", version.ref = "uuid-creator" }
+
+[bundles]
+awssdk = [
+    "awssdk-s3",
+    "awssdk-auth"
+]

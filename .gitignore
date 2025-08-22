@@ -1,3 +1,7 @@
+### Property files ###
+secrets.*
+.env*
+
 ### Development folders ###
 docs/
 tmp/
@@ -13,6 +17,9 @@ build/
 
 ### Kotlin ###
 .kotlin
+
+### MinIO ###
+minio-data/
 
 ### Compiled class file ###
 *.class
