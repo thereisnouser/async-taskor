@@ -6,10 +6,13 @@ spring-deps = "1.1.7"
 thumbnailator = "0.4.20"
 awssdk = "2.32.25"
 uuid-creator = "6.1.1"
+postgres = "42.7.7"
+flyway = "11.11.2"
 
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 kotlin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin" }
+kotlin-jpa = { id = "org.jetbrains.kotlin.plugin.jpa", version.ref = "kotlin" }
 spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
 spring-deps = { id = "io.spring.dependency-management", version.ref = "spring-deps" }
 
@@ -18,8 +21,15 @@ thumbnailator = { module = "net.coobird:thumbnailator", version.ref = "thumbnail
 awssdk-s3 = { module = "software.amazon.awssdk:s3", version.ref = "awssdk" }
 awssdk-auth = { module = "software.amazon.awssdk:auth", version.ref = "awssdk" }
 uuid-creator = { module = "com.github.f4b6a3:uuid-creator", version.ref = "uuid-creator" }
+postgres = { module = "org.postgresql:postgresql", version.ref = "postgres" }
+flyway-core = { module = "org.flywaydb:flyway-core", version.ref = "flyway" }
+flyway-postgres = { module = "org.flywaydb:flyway-database-postgresql", version.ref = "flyway" }
 
 [bundles]
+flyway = [
+    "flyway-core",
+    "flyway-postgres"
+]
 awssdk = [
     "awssdk-s3",
     "awssdk-auth"

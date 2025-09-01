@@ -18,9 +18,6 @@ build/
 ### Kotlin ###
 .kotlin
 
-### MinIO ###
-minio-data/
-
 ### Compiled class file ###
 *.class
 

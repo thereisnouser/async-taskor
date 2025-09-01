@@ -1,4 +1,4 @@
-package com.thereisnouser.asynctaskor.infrastructure.storage
+package com.thereisnouser.asynctaskor.storage
 
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.context.annotation.Bean

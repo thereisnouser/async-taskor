@@ -1,4 +1,4 @@
-package com.thereisnouser.asynctaskor.infrastructure.storage
+package com.thereisnouser.asynctaskor.storage
 
 import java.io.InputStream
 import java.nio.file.Path
